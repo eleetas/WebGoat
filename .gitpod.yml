@@ -2,5 +2,5 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: ./mvnw install -DskipTests
+  - init: mvn clean install -DskipTests
   - command: mvn -pl webgoat-server spring-boot:run
