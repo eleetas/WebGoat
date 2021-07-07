@@ -2,5 +2,6 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: mvn clean install -DskipTests
-  - command: mvn -pl webgoat-server spring-boot:run
+  - name: Build and run WebGoat
+    init: mvn clean install -DskipTests
+    command: mvn -pl webgoat-server spring-boot:run
